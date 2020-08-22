@@ -8,9 +8,9 @@ Using a standard neural network for sequence data donot work well because inputs
 
 ## Gated Recurrent Unit(GRU)
 
-It is one of the effective solution for vanishing gradient problem in the Recurrent Neural Network and will allow neural network to capture much longer range dependencies(connections) in a sequence. GRU address the issue of vanishing gradient problem by storing memory from the previous time step to help inform the network for future prediction. It have a memory cell 'c' which provides a bit of memory to remember. The main idea of GRU is that there will be a gate whose job is to decide when to update the values of c at each time step. This gate will be a value of either 0 or 1. If value of gate is equal to 1, it is saying to set the new value of c to that candidate value c tilde.
+It is one of the effective solution for vanishing gradient problem in the Recurrent Neural Network and will allow neural network to capture much longer range dependencies(connections) in a sequence. GRU address the issue of vanishing gradient problem by storing memory from the previous time step to help inform the network for future prediction. It have a memory cell 'c' which provides a bit of memory to remember. The main idea of GRU is that there will be a gate called update gate whose job is to decide when to update the values of c at each time step. This gate will be a value of either 0 or 1. If value of gate is equal to 1, it is saying to set the new value of c to that candidate value c tilde.
 c tilde is the candidate for replacing c at each time step.
 
 ## Long-Short Term Memory(LSTM)
 
-It is also a solution for vanishing gradient descent like GRU which has been historically more proven choice to use which is more powerful, effiecnt than GRU. LSTM is also a more general version of GRU.  
+It is also a solution for vanishing gradient descent like GRU which has been historically more proven choice to use which is more powerful, effiecnt than GRU. LSTM is also a more general version of GRU. The model is a bit similar to the GRU but it uses extra two gates forget gate and output gate. These gates is a vector of dimensions equal to the number of hidden units in a layer. Both LSTM as well as GRU are good at memorizing certain values for a long time because some values of c at previous time step is passed all the way forward.
