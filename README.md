@@ -4,7 +4,7 @@ Sequence Models have sequence data as both input and output. Such models are use
 
 ## Recurrent Neural Network
 
-Using a standard neural network for sequence data donot work well because inputs and outputs can be of different lengths in different examples. Also, it doesnot share features learned across different positions of texts. That is why we use Recurrent Neural Network for such problems. In this neural network, the parameters used in each time steps are shared because it uses the information that is earlier in the sequence to make a prediction. There are different RNN architectures like Many-to-Many, Many-to-One, One-to-One, and One-to-Many. 
+Using a standard neural network for sequence data donot work well because inputs and outputs can be of different lengths in different examples. Also, it doesnot share features learned across different positions of texts. That is why we use Recurrent Neural Network for such problems. In this neural network, the parameters used in each time steps are shared because it uses the information that is earlier in the sequence to make a prediction. There are different RNN architectures like Many-to-Many, Many-to-One, One-to-One, and One-to-Many. Also, we can build deep RNNs by just stacking the layers of RNN on top of each other but very deep RNNs is not used. Only some few layers are used.
 
 ## Gated Recurrent Unit(GRU)
 
@@ -18,3 +18,6 @@ It is also a solution for vanishing gradient descent like GRU which has been his
 ## Bi-directional Recurrent Neural Network(BRNN)
 
 This neural network takes the information from the previous time steps as well as from the future time steps to make predictions. Note that, it donot perform backward propagation insted it uses backward sequence computation to get activations for backward sequence. For most of the NLP problems, bidirectional RNN with LSTM model is used most often but this model is not useful for machine translation and speech recognition.
+
+# Natural Language Processing(NLP) and Word Embeddings
+
