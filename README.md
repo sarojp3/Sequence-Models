@@ -14,3 +14,7 @@ c tilde is the candidate for replacing c at each time step.
 ## Long-Short Term Memory(LSTM)
 
 It is also a solution for vanishing gradient descent like GRU which has been historically more proven choice to use which is more powerful, effiecnt than GRU. LSTM is also a more general version of GRU. The model is a bit similar to the GRU but it uses extra two gates forget gate and output gate. These gates is a vector of dimensions equal to the number of hidden units in a layer. Both LSTM as well as GRU are good at memorizing certain values for a long time because some values of c at previous time step is passed all the way forward.
+
+## Bi-directional Recurrent Neural Network(BRNN)
+
+This neural network takes the information from the previous time steps as well as from the future time steps to make predictions. Note that, it donot perform backward propagation insted it uses backward sequence computation to get activations for backward sequence. For most of the NLP problems, bidirectional RNN with LSTM model is used most often but this model is not useful for machine translation and speech recognition.
