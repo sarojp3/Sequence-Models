@@ -21,3 +21,4 @@ This neural network takes the information from the previous time steps as well a
 
 # Natural Language Processing(NLP) and Word Embeddings
 
+For natural language processing, we will use word embedding technique where we will use featurized representation of each words and then embed it to a 2D space so that we can visualize them. One of the common algorithm for that is t-SNE algorithm. In the visualization, we can see the grouping of similar word or close to similar words.
